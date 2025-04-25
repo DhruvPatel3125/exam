@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restorent>
+    <p1>
+        <menuid>101</menuid>
+        <foodCategory>Fast Food</foodCategory>
+        <foodItemName>Pizza</foodItemName>
+        <price>230</price>
+        <quntity>5</quntity>
+    </p1>
+    <p1>
+        <menuid>102</menuid>
+        <foodCategory>Helthy Food</foodCategory>
+        <foodItemName>Salad</foodItemName>
+        <price>30</price>
+        <quntity>10</quntity>
+    </p1>
+    <p1>
+        <menuid>103</menuid>
+        <foodCategory>Nonveg Food</foodCategory>
+        <foodItemName>burger</foodItemName>
+        <price>750</price>
+        <quntity>7</quntity>
+    </p1>
+    <p1>
+        <menuid>104</menuid>
+        <foodCategory>Sweet Food</foodCategory>
+        <foodItemName>Cake</foodItemName>
+        <price>730</price>
+        <quntity>2</quntity>
+    </p1>
+    <p1>
+        <menuid>105</menuid>
+        <foodCategory>Fast Food</foodCategory>
+        <foodItemName>Frenkey</foodItemName>
+        <price>100</price>
+        <quntity>5</quntity>
+    </p1>
+    
+</restorent>

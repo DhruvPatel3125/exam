@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        #schdule {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            text-align: center;
+            background: linear-gradient(to right, blue, green);
+            color: white;
+        }
+
+        footer {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="bg-primary text-center py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1>Chif-Shop</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="/chif/home.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="/chif/about.html" class="nav-link text-white">About</a></li>
+                    <li class="nav-item"><a href="/chif/item.html" class="nav-link text-white">Items</a></li>
+                    <li class="nav-item"><a href="/chif/chifProfit.html" class="nav-link text-white">Chif Profile</a>
+                    </li>
+                    <li class="nav-item"><a href="/chif/contactUs.html" class="nav-link text-white">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="schdule">
+        <div id="container">
+            <table id="tbl" class="table table-bordered text-white">
+                <thead class="table table-dark">
+                    <tr>
+                        <th>name</th>
+                        <th>foodCategory</th>
+                        <th>salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                          <td>Dhruv</td>  
+                          <td>Fast-Food</td>  
+                          <td>12000</td>
+                    </tr>
+                    <tr>
+                          <td>sujal</td>  
+                          <td>nonvej-Food</td>  
+                          <td>12000</td>
+                    </tr>
+                    <tr>
+                          <td>prince</td>  
+                          <td>sweet-Food</td>  
+                          <td>17000</td>
+                    </tr>
+                    <tr>
+                          <td>raj</td>  
+                          <td>Fast-Food</td>  
+                          <td>12000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>Contact Us : D.J.PATEL</p>
+            <p>&copy; Since 2021 </p>
+        </div>
+    </footer>
+<script>
+    $(document).ready(function(){
+        $("#tbl").fadeOut(2000);
+        $("#tbl").fadeIn(1000);
+    }
+)
+    
+</script>
+    
+</body>
+
+</html>

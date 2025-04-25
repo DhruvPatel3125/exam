@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foods>
+  <item>
+    <name>Pizza</name>
+    <category>Fast Food</category>
+  </item>
+  <item>
+    <name>Salad</name>
+    <category>Healthy</category>
+  </item>
+  <item>
+    <name>Burger</name>
+    <category>Fast Food</category>
+  </item>
+  <item>
+    <name>Soup</name>
+    <category>Healthy</category>
+  </item>
+</foods>

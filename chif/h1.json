@@ -1,0 +1,38 @@
+[
+    {
+      "menuid": "101",
+      "foodCategory": "Fast Food",
+      "foodItemName": "Pizza",
+      "price": "230",
+      "quntity": "5"
+    },
+    {
+      "menuid": "102",
+      "foodCategory": "Helthy Food",
+      "foodItemName": "Salad",
+      "price": "30",
+      "quntity": "10"
+    },
+    {
+      "menuid": "103",
+      "foodCategory": "Nonveg Food",
+      "foodItemName": "burger",
+      "price": "750",
+      "quntity": "7"
+    },
+    {
+      "menuid": "104",
+      "foodCategory": "Sweet Food",
+      "foodItemName": "Cake",
+      "price": "730",
+      "quntity": "2"
+    },
+    {
+      "menuid": "105",
+      "foodCategory": "Fast Food",
+      "foodItemName": "Frenkey",
+      "price": "100",
+      "quntity": "5"
+    }
+  ]
+  

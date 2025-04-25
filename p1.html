@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 60px;
+        background:linear-gradient(to right, #00c6ff, #0072ff);
+    }
+    .container{
+        max-width: 400px;
+
+    }
+    .error{
+        color: red;
+        display: none;
+        font-size: 0.9em;
+    }
+    button{
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #007bff;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Registration form</h1>
+        <form id="form">
+            <div class="form-group">
+                <label for="name">Enter name</label>
+                <input type="name" name="name" id="name" class="form-control">
+                <small class="error" id="nameError">Please enter valid name</small>
+            </div>
+            <div class="form-group">
+                <label for="name">Enter email</label>
+                <input type="email" name="email" id="email" class="form-control">
+                <small class="error" id="emailError">Please enter valid email</small>
+            </div>
+            <div class="form-group">
+                <label for="name">Enter password</label>
+                <input type="password" name="password" id="password" class="form-control">
+                <small class="error" id="passwordError">Please enter valid password</small>
+            </div>
+            <div class="form-group">
+                <label for="name">Enter phone</label>
+                <input type="phone" name="phone" id="phone" class="form-control">
+                <small class="error" id="phoneError">Please enter valid phone</small>
+            </div>
+            <button class="btn btn-primary">submit</button>
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $("#form").submit(function(e){
+            e.preventDefault();
+            let isValid = true;
+
+
+            function validate(id,condition){
+                if(condition){
+                    $(id).hide();
+                }else{
+                    $(id).show();
+                    isValid = false;
+                }
+            }
+
+            validate("#nameError",$("#name").val().trim().length >= 3);
+            validate("#emailError",/^[\w]+@[a-z]+\.[a-z]{2,}$/.test($("#email").val().trim()));
+            validate("#passwordError",$("#password").val().trim().length >=6);
+            validate("#phoneError",/^\d{10}$/.test($("#phone").val().trim()))
+
+
+            if(isValid){
+                alert("Form submitted successfully!");
+                // Here you can add the code to submit the form data to the server
+            }
+        })
+    })
+</script>

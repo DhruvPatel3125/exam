@@ -1,0 +1,23 @@
+[
+    {
+        "bookId":"101",
+        "bookName":"cppm",
+        "author":"J.L.patel",
+        "publisher":"sutex",
+        "price":"1200"
+    },
+    {
+        "bookId":"101",
+        "bookName":"cppm",
+        "author":"J.L.patel",
+        "publisher":"sutex",
+        "price":"1200"
+    },
+    {
+        "bookId":"101",
+        "bookName":"cppm",
+        "author":"J.L.patel",
+        "publisher":"sutex",
+        "price":"1200"
+    }
+]

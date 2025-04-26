@@ -55,11 +55,11 @@
             <table class="table table-bordered text-white">
                 <thead class="table table-dark">
                     <tr>
-                        <th>menuid</th>
-                        <th>foodCategory</th>
-                        <th>foodItemName</th>
+                        <th>bookId</th>
+                        <th>bookName</th>
+                        <th>authorpublisher</th>
+                        <th>publisher</th>
                         <th>price</th>
-                        <th>quntity</th>
                     </tr>
                 </thead>
                 <tbody id="body-root">
@@ -78,24 +78,24 @@
     </footer>
 
     <script>
-       $(document).ready(function(){
-      $.ajax({
-        type: "get",
-        url: "h1.json", // make sure this file is in the same directory
-        dataType: "json",
-        success: function(json) {
-          json.forEach(function(item) {
-            $("#body-root").append(`<tr>
-              <td>${item.menuid}</td>
-              <td>${item.foodCategory}</td>
-              <td>${item.foodItemName}</td>
-              <td>${item.price}</td>
-              <td>${item.quntity}</td>
-            </tr>`);
-          });
-        }
-      });
-    });
+      $(document).ready(function(){
+        $.ajax({
+            type:"get",
+            url:"/Book.json",
+            dataType:"json",
+            success:function(json){
+                json.forEach(function(item){
+                    $("#body-root").append(`<tr>
+                        <td>${item.bookId}</td>
+                        <td>${item.bookName}</td>
+                        <td>${item.author}</td>
+                        <td>${item.publisher}</td>
+                        <td>${item.price}</td>
+                        </tr>`)
+                })
+            }
+        })
+      })
     </script>
 </body>
 
